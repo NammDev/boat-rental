@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import { Satisfy, Lato } from 'next/font/google'
 import type { Metadata } from 'next'
 import { cn } from '@/lib/utils'
+import ModalContainer from '@/components/modal/container'
 
 const lato = Lato({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className={cn('h-full font-lato antialiased', satisfy.variable, lato.variable)}>
         {children}
+        <ModalContainer />
       </body>
     </html>
   )
