@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import FindTripForm from './search-form'
 // import FindTripForm from '@/components/home/search-form/search-form'
 
 export default function HeroBanner() {
@@ -13,7 +14,7 @@ export default function HeroBanner() {
         priority
         className='aspect-[2/1] h-full bg-gray-lighter object-cover'
       />
-      {/* <FindTripForm /> */}
+      <FindTripForm />
     </div>
   )
 }
